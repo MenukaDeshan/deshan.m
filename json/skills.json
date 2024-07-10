@@ -1,0 +1,12 @@
+[
+    { "name": "Web Development", "percentage": 85 },
+    { "name": "Java", "percentage": 60 },
+    { "name": "Python", "percentage": 50 },
+    { "name": "PHP", "percentage": 55 },
+    { "name": "Laravel", "percentage": 40 },
+    { "name": "Cyber Security", "percentage": 50 },
+    { "name": "React js", "percentage": 50 },
+    { "name": "After effects", "percentage": 60 },
+    { "name": "Premiere pro", "percentage": 90 },
+    { "name": "Photoshop", "percentage": 90 }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Web Design",
+        "category": "E-Commerce",
+        "image": "images/work/img-1.png",
+        "link": "#"
+    },
+    {
+        "title": "NFT Web Design",
+        "category": "NFT Marketplace",
+        "image": "images/work/img-2.png",
+        "link": "#"
+    },
+    {
+        "title": "App Design",
+        "category": "Mobile App",
+        "image": "images/work/img-3.png",
+        "link": "#"
+    },
+    {
+        "title": "Web Design",
+        "category": "E-Commerce",
+        "image": "images/work/img-4.png",
+        "link": "#"
+    }
+]

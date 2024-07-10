@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Menuka Deshan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71" data-layout-mode="light">
+<div class="ms-auto ps-2 ps-lg-0">
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="mdi mdi-brightness-5 mode-dark mx-auto"></i>
+        <i class="mdi mdi-brightness-3 bx-spin mode-light"></i>
+    </a>
+</div>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <a class="navbar-brand logo text-uppercase" href="index.html">
+                    <img src="images/logo-light.png" class="logo-light" alt="" height="34">
+                    <img src="images/logo-dark.png" class="logo-dark" alt="" height="34">
+                </a>
+            </a>
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-dark" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#aboutme" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#work" class="nav-link ">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    
+                </ul>
+                <!--end navbar-nav-->
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- home section -->
+    <section class="home-2" style="background-image: url(images/home/home-2/home-bg2.png); background-size: cover;" id="home">
+        <div class="container position-relative">
+
+            <div class="home-icon">
+                <a href="#">
+                    <div class="social-icon facebook mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Facebook">
+                        <i class="mdi mdi-facebook fs-20 text-primary"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon instagram mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Instagram">
+                        <i class="mdi mdi-instagram fs-20 text-primary"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon twitter mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Twitter">
+                        <i class="mdi mdi-twitter fs-20 text-primary"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon linkedin" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin">
+                        <i class="mdi mdi-linkedin fs-20 text-primary"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-contact">
+                        <h4 class="text-primary">Hello i'am</h4>
+                        <h2 class="display-4 fw-bold mb-0">Menuka Deshan</h2>
+                        <h6>Undergraduate in Higher National Diploma in Information Technology</h6>
+                        <div class="mt-4">
+                            <p class="text-muted mb-2">I am a passionate and enthusiastic beginner programmer with a strong desire to explore the exciting world of coding. I have a solid foundation in the basics of programming languages such as Python, JavaScript, and HTML/CSS. I am constantly eager to learn and improve my skills, and I enjoy tackling coding challenges and building small projects. My goal is to grow as a programmer and eventually contribute to innovative software solutions that can make a positive impact on people s lives.</p>
+                        </div>
+                        
+
+                        <div class="watch-video mt-4 pt-2">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="video-play-icon watch text-white">
+                                    <i
+                                        class="mdi mdi-download text-center d-inline-block rounded-pill text-light bg-primary fs-30 avatar-md me-1"></i>
+                                </a>
+                                <p class="mb-0 ms-2">Download CV</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/home/profile.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="welcome-text">
+            <p>Welcome</p>
+        </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+
+                    <!-- <div class="col-lg-6 position-relative">
+                        <div class="image-round"></div>
+                        <div class="about-image p-4 pb-0">
+                            <img src="images/logo-light.png" alt="" class="img-fluid">
+                        </div>
+                    </div> -->
+
+                    <div class="">
+                        <div class="about-item p-5">
+                            <h2 class="display-5 fw-semibold">About Me</h2>
+                            <p class="text-muted fs-14">I am a passionate and enthusiastic beginner programmer with a strong desire 
+                                to explore the exciting world of coding. I have a solid foundation in the basics of programming languages 
+                                such as Python, JavaScript, and HTML/CSS. I am constantly eager to learn and improve my skills, and 
+                                I enjoy tackling coding challenges and building small projects. My goal is to grow as a programmer and eventually 
+                                contribute to innovative software solutions that can make a positive impact on people s lives.</p>
+
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Education</button>
+                                </li>
+                            </ul>
+                            <!-- this skiis bars need to be updated to get data from json file -->
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <!-- Skills section will be populated dynamically -->
+                                </div>
+                            
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="experience">
+                                        <!-- Experience entries will be populated dynamically -->
+                                    </div>
+                                </div>
+                            
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="experience">
+                                        <!-- Education entries will be populated dynamically -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    // Function to fetch and populate data
+                                    function fetchDataAndPopulate(url, containerId) {
+                                        fetch(url)
+                                            .then(response => response.json())
+                                            .then(data => {
+                                                const container = document.getElementById(containerId);
+                            
+                                                data.forEach(entry => {
+                                                    const entryItem = document.createElement('div');
+                                                    entryItem.classList.add('row', 'position-relative');
+                            
+                                                    const entryContent = `
+                                                        <div class="col-2">
+                                                            <div class="border-left"></div>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div class="mt-4 pt-2">
+                                                                <h5>${entry.title}</h5>
+                                                                <p class="text-muted fs-15">${entry.date}</p>
+                                                                <p class="text-muted fs-15">${entry.description}</p>
+                                                            </div>
+                                                        </div>
+                                                    `;
+                                                    entryItem.innerHTML = entryContent;
+                                                    container.appendChild(entryItem);
+                                                });
+                                            })
+                                            .catch(error => {
+                                                console.error(`Error fetching ${url}:`, error);
+                                            });
+                                    }
+                            
+                                    // Fetch and populate skills section (already defined earlier)
+                                    fetch('./json/skills.json')
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            const skillsContainer = document.getElementById('pills-home'); // Assuming skills go into the 'home' tab-pane
+                            
+                                            // Iterate over each skill in the JSON data and create HTML
+                                            data.forEach(skill => {
+                                                const skillItem = document.createElement('div');
+                                                skillItem.classList.add('skill-item', 'mt-4', 'pt-2');
+                            
+                                                const skillContent = `
+                                                    <div class="d-flex justify-content-between">
+                                                        <h6>${skill.name}</h6>
+                                                        <h6>${skill.percentage}%</h6>
+                                                    </div>
+                                                    <div class="progress" style="height: 5px;">
+                                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="${skill.percentage}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.percentage}%;"></div>
+                                                    </div>
+                                                `;
+                                                skillItem.innerHTML = skillContent;
+                                                skillsContainer.appendChild(skillItem);
+                                            });
+                                        })
+                                        .catch(error => {
+                                            console.error('Error fetching skills JSON:', error);
+                                        });
+                            
+                                    // Fetch and populate experience section
+                                    fetchDataAndPopulate('./json/experience.json', 'pills-profile');
+                            
+                                    // Fetch and populate education section
+                                    fetchDataAndPopulate('./json/education.json', 'pills-contact');
+                                });
+                            </script>                         
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+  
+    <!-- start my-work -->
+    <section class="section my-work" id="work">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center">
+                    <div class="left-text">
+                        <h2 class="mb-0">My Latest Work</h2>
+                        <p class="fs-15 text-muted">Prefect solution for digital experience</p>
+                    </div>
+                    <!-- <div class="right-text ms-auto">
+                        <a href="#" class="text-primary border-2 border-primary border-bottom">More Work <img
+                                src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="work-slider" id="work-slider">
+                        <div class="item">
+                            <div class="work-image position-relative">
+                                <a href="#">
+                                    <img src="images/work/project1.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0"></h4>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/project2.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0"></h4>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/project3.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-white">
+                                        <h4 class="mb-0"></h4>
+                                        <p class="text-white-50"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/project4.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-white">
+                                        <h4 class="mb-0"></h4>
+                                        <p class="text-white-50"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/project5.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-white">
+                                        <h4 class="mb-0"></h4>
+                                        <p class="text-white-50"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end my-work -->
+
+   <!-- start contact -->
+   <section class="contact pt-5 pb-0" id="contact">
+    <div class="container">
+
+        <div class="shape-1">
+            <img src="images/testi/shape.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="contact-item">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <div class="mb-4">
+                            <h3>Let's Connect</h3>
+                            <p class="text-muted mb-0">Looking for help? Fill the form and start a new adventure.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <div class="info-content mt-4">
+                            <h6>Address :</h6>
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                </div>
+                                <div class="icon-content ms-3">
+                                    <p class="mb-0 fs-15"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-content mt-4 pt-2">
+                            <h6>Phone :</h6>
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                </div>
+                                <div class="icon-content ms-3">
+                                    <p class="mb-0 fs-15"></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="info-content mt-4 pt-2">
+                            <h6>Support :</h6>
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                </div>
+                                <div class="icon-content ms-3">
+                                    <p class="mb-0 fs-15"></p>
+                                    <p class="mb-0 fs-15"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7 ">
+                    <div class="custom-form mt-4 ">
+                        <form method="post" name="myForm" onsubmit="return validateForm()">
+
+                            <h6 class="mb-0 text-muted">Let's talk</h6>
+                            <h3>Enter your project details</h3>
+                            <p class=" fs-15 text-muted">Content here, content here', making it look like
+                                readable English. Many desktop publishing packages.</p>
+                            <p id="error-msg" style="opacity: 1;">
+                                <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                            </p>
+
+
+                            <div id="simple-msg"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input name="name" id="name" type="text" class="form-control contact-form"
+                                            placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input name="email" id="email" type="email"
+                                            class="form-control contact-form" placeholder="Your email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <input type="text" class="form-control contact-form" id="subject"
+                                            placeholder="Your Subject..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <textarea name="comments" id="comments" rows="4"
+                                            class="form-control contact-form h-auto"
+                                            placeholder="Your message..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-lg-12 d-grid">
+                                    <input type="submit" id="submit" name="send"
+                                        class="submitBnt btn btn-rounded btn-primary" value="Send Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shape-2">
+            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="shape-3 ">
+            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+        </div>
+    </div>
+</section>
+<!-- end contact -->
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mt-5">
+                        <a class=" logo text-uppercase" href="index.html">
+                            <img src="images/logo-light.png" class="logo-light" alt="" height="32">
+                            <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+                        </a>
+                        <p class="fs-15 text-white-50 mt-4">“Bugs are the footprints of the programmer’s journey.”</p>
+
+                        <div class="icon-item mt-4">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <div class="social-icon facebook avatar-xs">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon instagram avatar-xs">
+                                        <i class="fa fa-instagram "></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon linkedin avatar-xs">
+                                        <i class="fa fa-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon pinterest avatar-xs">
+                                        <i class="fa fa-pinterest-p"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="col-lg-2 mt-4">
+                    <h5 class="text-white">whatever</h5>
+
+                    <ul class="footer-text list-unstyled mt-4">
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Security & Provciy</a></li>
+                    </ul>
+
+                </div> -->
+
+                <div class="col-lg-4 mt-4">
+                    <h5 class="text-white">Linkedin</h5>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="linkedin-box mt-4">
+                                <p class="mb-0 text-white-50 fs-15 mb-2">Open to work.</p>
+                                <a href="https://www.linkedin.com/in/menuka-deshan/" class="fs-15">@Deshan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="linkedin-content d-flex align-items-center">
+                        <div class="icon">
+                            <i class="mdi mdi-linkedin text-white fs-40"></i>
+                        </div>
+                        <div class="icon-content ms-2">
+                            <a href="#" class="text-white-50">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 mt-4">
+                    <h5 class="text-white">Sign up</h5>
+                    <p class="mb-0 text-white-50 mt-4">Follow our newsletter to stay updated about agency.</p>
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
+                            aria-describedby="basic-addon2">
+                        <a href="#" class="input-group-text bg-primary text-white px-4" id="basic-addon2">Go</a>
+                    </div>
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section class="bottom-footer py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-center text-muted">©
+                        <script>document.write(new Date().getFullYear())</script> Made with <i
+                            class="mdi mdi-heart text-blue"></i> by <a href="https://www.linkedin.com/in/menuka-deshan/" target="_blank"
+                            class="text-muted">DESHAN</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index-2-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 14:29:11 GMT -->
+</html>
