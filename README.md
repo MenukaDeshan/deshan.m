@@ -1,1 +1,2 @@
 # deshan.m
+<p align="center"><img src="https://socialify.git.ci/MenukaDeshan/deshan.m/image?description=1&amp;descriptionEditable=Welcome%20to%20my%20portfolio%20website!%20Explore%20my%20journey%20in%20web%20development%20and%20beyond.%20Discover%20my%20projects%2C%20skills%2C%20and%20experiences%20showcased%20to%20reflect%20my%20passion%20for%20innovation%20and%20problem-solving.&amp;font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
