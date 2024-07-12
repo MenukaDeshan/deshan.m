@@ -173,29 +173,28 @@
         </div>
     </section>
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
-</head>
-<body>
     <section class="section about-me" id="aboutme">
         <div class="container">
             <div class="about-box">
                 <div class="row">
+
+                    <!-- <div class="col-lg-6 position-relative">
+                        <div class="image-round"></div>
+                        <div class="about-image p-4 pb-0">
+                            <img src="images/logo-light.png" alt="" class="img-fluid">
+                        </div>
+                    </div> -->
+
                     <div class="">
                         <div class="about-item p-5">
                             <h2 class="display-5 fw-semibold">About Me</h2>
-                            <p class="text-muted fs-14" >I am a passionate and enthusiastic beginner programmer with a strong desire 
+                            <p class="text-muted fs-14">I am a passionate and enthusiastic beginner programmer with a strong desire 
                                 to explore the exciting world of coding. I have a solid foundation in the basics of programming languages 
                                 such as Python, JavaScript, and HTML/CSS. I am constantly eager to learn and improve my skills, and 
                                 I enjoy tackling coding challenges and building small projects. My goal is to grow as a programmer and eventually 
                                 contribute to innovative software solutions that can make a positive impact on people s lives.</p>
 
-                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab"  role="tablist">
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -216,12 +215,12 @@
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 </div>
                             
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="overflow: hidden;">
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     <div class="experience">
                                     </div>
                                 </div>
                             
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" style="overflow: hidden;">
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                                     <div class="experience">
                                     </div>
                                 </div>
@@ -234,36 +233,23 @@
                                             .then(response => response.json())
                                             .then(data => {
                                                 const container = document.getElementById(containerId);
+                            
                                                 data.forEach(entry => {
                                                     const entryItem = document.createElement('div');
-                                                    entryItem.classList.add('row', 'position-relative', 'entry-item');
-
-                                                    let entryContent = '';
-                                                    if (containerId !== 'pills-home') {
-                                                        entryContent = `
-                                                            <div class="col-1 position-relative">
-                                                                <div class="border-left"></div>
-                                                                <div class="dot"></div>
+                                                    entryItem.classList.add('row', 'position-relative');
+                            
+                                                    const entryContent = `
+                                                        <div class="col-2">
+                                                            <div class="border-left"></div>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div class="mt-4 pt-2">
+                                                                <h5>${entry.title}</h5>
+                                                                <p class="text-muted fs-15">${entry.date}</p>
+                                                                <p class="text-muted fs-15">${entry.description}</p>
                                                             </div>
-                                                            <div class="col-11">
-                                                                <div class="mt-4 pt-2">
-                                                                    <h5>${entry.title}</h5>
-                                                                    <p class="text-muted fs-15">${entry.date}</p>
-                                                                    <p class="text-muted fs-15">${entry.description}</p>
-                                                                </div>
-                                                            </div>
-                                                        `;
-                                                    } else {
-                                                        entryContent = `
-                                                            <div class="d-flex justify-content-between">
-                                                                <h6>${entry.name}</h6>
-                                                                <h6>${entry.percentage}%</h6>
-                                                            </div>
-                                                            <div class="progress" style="height: 5px;">
-                                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="${entry.percentage}" aria-valuemin="0" aria-valuemax="100" style="width: ${entry.percentage}%;"></div>
-                                                            </div>
-                                                        `;
-                                                    }
+                                                        </div>
+                                                    `;
                                                     entryItem.innerHTML = entryContent;
                                                     container.appendChild(entryItem);
                                                 });
@@ -272,7 +258,7 @@
                                                 console.error(`Error fetching ${url}:`, error);
                                             });
                                     }
-
+                            
                                     fetch('./json/skills.json')
                                         .then(response => response.json())
                                         .then(data => {
@@ -280,7 +266,7 @@
                                             data.forEach(skill => {
                                                 const skillItem = document.createElement('div');
                                                 skillItem.classList.add('skill-item', 'mt-4', 'pt-2');
-
+                            
                                                 const skillContent = `
                                                     <div class="d-flex justify-content-between">
                                                         <h6>${skill.name}</h6>
@@ -301,17 +287,13 @@
                                     fetchDataAndPopulate('./json/education.json', 'pills-contact');
                                 });
                             </script>                         
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</body>
-</html>
-
-    
-    
 
     <section class="section my-work" id="work">
         <div class="container">

@@ -1,12 +1,22 @@
 [
     {
-        "title": "Basic Computer Application",
-        "date": "1996-1998 (3 year)",
-        "description": "There are many variations of passages of Lorem Ipsum available."
+        "title": "The Higher National Diploma in Information Technology (HNDIT)",
+        "date": "2021-Prsent",
+        "description": "Following Higher National Diploma in Information Technology at Sri Lanka Institute of Advanced Technological Education – Dehiwala."
+    },
+    {
+        "title": "Full Stack Developer",
+        "date": "2023-Present",
+        "description": "2023-Present | Sri Lanka, Deh Web Design for Beginners/ Python Programming/ Front-End Web Development"
     },
     {
         "title": "Master Computer Application",
-        "date": "1999-2000 (2 year)",
-        "description": "The majority have fered altation in some form, by injmour, or randomised words which don't look even slightlievable."
+        "date": "2020",
+        "description": "General Certificate of Education – Advanced Level Maths Stream - Got 1C Phycsis / 2S For ICT and Maths"
+    },
+    {
+        "title": "Passed G.C.E.Ordinary Level (O/L) EXAMINATION",
+        "date": "2016",
+        "description": "General Certificate of Education – Ordinary Level  | Sri Lanka Got 3A / 2B / 4C : A for Maths, ICT, English"
     }
 ]

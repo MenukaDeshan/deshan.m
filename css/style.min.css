@@ -835,7 +835,7 @@ hr {
 }
 
 .bg-warning {
-    background-color: #ffcd00 !important
+    background-color: #0008ff !important
 }
 
 .bg-soft-warning {
@@ -2696,5 +2696,25 @@ body[data-layout-mode=dark] .footer .linkedin-box::before {
 body[data-layout-mode=dark] .bottom-footer {
     background-color: #343f4b !important
 }
+.entry-item {
+    margin-bottom: 20px;
+}
 
-/*# sourceMappingURL=style.min.css.map */
+.entry-item .border-left {
+    height: 120%;
+    border-left: 2px solid #0022ff;
+    position: absolute;
+    left: 20px;
+    width: 10px;
+    top: -160px;
+}
+
+.entry-item .dot {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
