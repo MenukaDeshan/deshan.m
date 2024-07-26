@@ -364,8 +364,8 @@ body[data-layout-mode=dark] .nav-sticky .navbar-brand span,body[data-layout-mode
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     position: relative
 }
 
@@ -2442,7 +2442,7 @@ body[data-layout-mode=dark] .pricing .pricing-item:hover .top-bar {
 }
 
 .my-work {
-    background-color: rgba(37,88,171,.05)
+    background-color: rgba(255, 255, 255, 0.05)
 }
 
 .my-work .work-slider .work-image img {
@@ -2603,7 +2603,7 @@ body[data-layout-mode=dark] .contact .custom-form .form-group .form-control {
 
 .footer {
     background-color: #0c1627;
-    padding: 120px 0
+    padding: 40px 0
 }
 
 .footer .footer-text li {
@@ -2680,7 +2680,6 @@ body[data-layout-mode=dark] .contact .custom-form .form-group .form-control {
         display:none
     }
 }
-
 body[data-layout-mode=dark] .footer {
     background-color: #303841 !important
 }
@@ -2717,4 +2716,25 @@ body[data-layout-mode=dark] .bottom-footer {
     height: 10px;
     background-color: #000;
     border-radius: 50%;
+}
+/*-----------------*/
+.badges-from-cisco{
+    background-color: rgba(37, 88, 171, .05);
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.badges-from-cisco .row {
+    padding: 2% 0;
+}
+.badges-from-htb{
+    padding: 30px;
+    padding-bottom: 50px;
+    background: #1a2332;
+}
+.badges-from-htb h2{
+    color: rgb(255, 255, 255);
+}
+.badges-from-htb .row {
+    padding: 2% 0;
 }
