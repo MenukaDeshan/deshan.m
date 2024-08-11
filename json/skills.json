@@ -1,12 +1,158 @@
 [
-    { "name": "Web Development", "percentage": 85 },
-    { "name": "Java", "percentage": 60 },
-    { "name": "Python", "percentage": 50 },
-    { "name": "PHP", "percentage": 55 },
-    { "name": "Laravel", "percentage": 40 },
-    { "name": "Cyber Security", "percentage": 50 },
-    { "name": "React js", "percentage": 50 },
-    { "name": "After effects", "percentage": 60 },
-    { "name": "Premiere pro", "percentage": 90 },
-    { "name": "Photoshop", "percentage": 90 }
+    {
+        "src": "images/svg/html5.svg",
+        "alt": "HTML5",
+        "name": "HTML5"
+    },
+    {
+        "src": "images/svg/CSS3_logo.svg",
+        "alt": "CSS3",
+        "name": "CSS3"
+    },
+    {
+        "src": "images/svg/Bootstrap_logo.svg",
+        "alt": "Bootstrap",
+        "name": "Bootstrap"
+    },
+    {
+        "src": "images/svg/Tailwind.png",
+        "alt": "Tailwind CSS",
+        "name": "Tailwind CSS"
+    },
+    {
+        "src": "images/svg/JavaScript.png",
+        "alt": "JavaScript",
+        "name": "JavaScript"
+    },
+    {
+        "src": "images/svg/react-logo.png",
+        "alt": "React",
+        "name": "React"
+    },
+    {
+        "src": "images/svg/next-js.svg",
+        "alt": "Next.js",
+        "name": "Next.js"
+    },
+    {
+        "src": "images/svg/threejs.png",
+        "alt": "Three.js",
+        "name": "Three.js"
+    },
+    {
+        "src": "images/svg/C.png",
+        "alt": "C#",
+        "name": "C#"
+    },
+    {
+        "src": "images/svg/docker.svg",
+        "alt": "Docker",
+        "name": "Docker"
+    },
+    {
+        "src": "images/svg/Git.png",
+        "alt": "Git",
+        "name": "Git"
+    },
+    {
+        "src": "images/svg/github.png",
+        "alt": "GitHub",
+        "name": "GitHub"
+    },
+    {
+        "src": "images/svg/python.svg",
+        "alt": "Python",
+        "name": "Python"
+    },
+    {
+        "src": "images/svg/java.svg",
+        "alt": "Java",
+        "name": "Java"
+    },
+    {
+        "src": "images/svg/php.png",
+        "alt": "PHP",
+        "name": "PHP"
+    },
+    {
+        "src": "images/svg/mysql.svg",
+        "alt": "MySQL",
+        "name": "MySQL"
+    },
+    {
+        "src": "images/svg/nodejs.png",
+        "alt": "Node.js",
+        "name": "Node.js"
+    },
+    {
+        "src": "images/svg/postman.svg",
+        "alt": "Postman",
+        "name": "Postman"
+    },
+    {
+        "src": "images/svg/ethicalhacking.png",
+        "alt": "Ethical Hacking",
+        "name": "Ethical Hacking"
+    },
+    {
+        "src": "images/svg/ubu-server.png",
+        "alt": "Ubuntu Server",
+        "name": "Ubuntu Server"
+    },
+    {
+        "src": "images/svg/kali.png",
+        "alt": "Kali Linux",
+        "name": "Kali Linux"
+    },
+    {
+        "src": "images/svg/linux.png",
+        "alt": "Linux",
+        "name": "Linux"
+    },
+    {
+        "src": "images/svg/nmap.png",
+        "alt": "Nmap",
+        "name": "Nmap"
+    },
+    {
+        "src": "images/svg/pentesting.png",
+        "alt": "Penetration Testing",
+        "name": "Penetration Testing"
+    },
+    {
+        "src": "images/svg/IntelliJ_IDEA.png",
+        "alt": "IntelliJ IDEA",
+        "name": "IntelliJ IDEA"
+    },
+
+    {
+        "src": "images/svg/vscode.png",
+        "alt": "Visual Studio Code",
+        "name": "Code"
+    },
+    {
+        "src": "images/svg/Notion.png",
+        "alt": "Notion",
+        "name": "Notion"
+    },
+    {
+        "src": "images/svg/figma.png",
+        "alt": "Figma",
+        "name": "Figma"
+    },
+    {
+        "src": "images/svg/Adobe_After_Effects.png",
+        "alt": "Adobe After Effects",
+        "name": "After Effects"
+    },
+    {
+        "src": "images/svg/Adobe_Premiere_Pro.png",
+        "alt": "Adobe Premiere Pro",
+        "name": "Premiere Pro"
+    },
+    {
+        "src": "images/svg/photoshop.png",
+        "alt": "Photoshop",
+        "name": "Photoshop"
+    }
 ]

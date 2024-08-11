@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/css/carousel.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="css/tools.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -210,6 +212,33 @@
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="badge-container" id="badge-container"></div>
+    
+                                    <script>
+                                        // Fetch the data from the JSON file
+                                        fetch('json/skills.json')
+                                            .then(response => response.json())
+                                            .then(data => {
+                                                const container = document.getElementById('badge-container');
+                                                data.forEach(badge => {
+                                                    const badgeDiv = document.createElement('div');
+                                                    badgeDiv.className = 'badge';
+                                                    
+                                                    const img = document.createElement('img');
+                                                    img.src = badge.src;
+                                                    img.alt = badge.alt;
+                                                    
+                                                    const span = document.createElement('span');
+                                                    span.textContent = badge.name;
+                                                    
+                                                    badgeDiv.appendChild(img);
+                                                    badgeDiv.appendChild(span);
+                                                    container.appendChild(badgeDiv);
+                                                });
+                                            })
+                                            .catch(error => console.error('Error fetching badge data:', error));
+                                    </script>
+
                                 </div>
                             
                                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="overflow: hidden;">
@@ -226,7 +255,7 @@
                             <script>
                                 document.addEventListener('DOMContentLoaded', function () {
                                     function fetchDataAndPopulate(url, containerId) {
-                                        fetch(url)
+                                         fetch(url)
                                             .then(response => response.json())
                                             .then(data => {
                                                 const container = document.getElementById(containerId);
@@ -267,32 +296,7 @@
                                             .catch(error => {
                                                 console.error(`Error fetching ${url}:`, error);
                                             });
-                                    }
-
-                                    fetch('./json/skills.json')
-                                        .then(response => response.json())
-                                        .then(data => {
-                                            const skillsContainer = document.getElementById('pills-home');
-                                            data.forEach(skill => {
-                                                const skillItem = document.createElement('div');
-                                                skillItem.classList.add('skill-item', 'mt-4', 'pt-2');
-
-                                                const skillContent = `
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>${skill.name}</h6>
-                                                        <h6>${skill.percentage}%</h6>
-                                                    </div>
-                                                    <div class="progress" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="${skill.percentage}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.percentage}%;"></div>
-                                                    </div>
-                                                `;
-                                                skillItem.innerHTML = skillContent;
-                                                skillsContainer.appendChild(skillItem);
-                                            });
-                                        })
-                                        .catch(error => {
-                                            console.error('Error fetching skills JSON:', error);
-                                        });                    
+                                    }        
                                     fetchDataAndPopulate('./json/experience.json', 'pills-profile');
                                     fetchDataAndPopulate('./json/education.json', 'pills-contact');
                                 });
@@ -302,6 +306,8 @@
                 </div>
             </div>
         </div>
+        
+        
 </section>
 
 <section class="badges-from-cisco">
@@ -322,6 +328,8 @@
                     <div class="slide"><img src="images/cisco/netbasic.png"></div>
                     <div class="slide"><img src="images/cisco/introduction-to-cybersecurity.png"></div>
                     <div class="slide"><img src="images/cisco/ethical-hacker.png"></div>
+                    <div class="slide"><img src="images/cisco/networking-devices-and-initial-configuration.png"></div>
+                    <div class="slide"><img src="images/cisco/endpoint-security.png"></div>
                 </div>
             </div>
         </div>
@@ -373,6 +381,7 @@
                 <div class="slide"><img src="images/htb/editorial.png" style="border-radius: 100%;"></div>
                 <div class="slide"><img src="images/htb/greenhorn.png" style="border-radius: 100%;"></div>
                 <div class="slide"><img src="images/htb/wifine.png" style="border-radius: 100%;"></div>
+                <div class="slide"><img src="images/htb/iclean.png" style="border-radius: 100%;"></div>
 
             </div>
         </div>

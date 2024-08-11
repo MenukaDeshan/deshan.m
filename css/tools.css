@@ -1,0 +1,28 @@
+.badge-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 7px 13px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.badge img {
+    width: 23px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.badge span {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+}
